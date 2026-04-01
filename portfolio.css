@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EAEAEA;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    background-color: #FFFFFF;
+}
+
+header{
+    background-color: #002171;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
+}
+
+#logo{
+    margin-bottom: 0.5em;
+}
+
+.logo-text{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #FFFFFF;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    padding: 0.3em 0;
+    border-bottom: 1px solid #5C7FA3;
+}
+
+nav li:last-child{
+    border-bottom: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 0.95em;
+}
+
+nav a:link{
+    color: #FFFFFF;
+}
+
+nav a:visited{
+    color: #CCCCCC;
+}
+
+nav a:hover{
+    color: #90C7E3;
+}
+
+#social-header{
+    margin-top: 0.5em;
+}
+
+.social-icon{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    line-height: 32px;
+    font-size: 0.75em;
+    margin: 0 0.2em;
+}
+
+.social-icon:hover{
+    background-color: #5C7FA3;
+}
+
+.social-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    padding: 1.5em;
+}
+
+#home{
+    padding-bottom: 2em;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.greeting{
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 1px solid #333333;
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+}
+
+#photo{
+    text-align: center;
+    margin-top: 1em;
+}
+
+#profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#buttons{
+    margin-top: 1.5em;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    border: 1px solid #333333;
+    text-decoration: none;
+    color: #333333;
+    margin-right: 0.5em;
+    font-size: 0.95em;
+}
+
+.btn:hover{
+    background-color: #002171;
+    color: #FFFFFF;
+    border-color: #002171;
+}
+
+#about{
+    padding: 2em 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+h2{
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#projects{
+    padding: 2em 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.card{
+    border: 1px solid #CCCCCC;
+    margin-bottom: 1.5em;
+}
+
+.card-image{
+    height: 180px;
+    background-image: linear-gradient(135deg, #c9e4fe, #90C7E3, #1f459d);
+    background-size:100% 100%;
+}
+
+.card h3{
+    padding: 0.5em 0.8em 0;
+    margin: 0;
+    font-size: 1em;
+    color: #002171;
+}
+
+.card p{
+    padding:0.3em 0.8em 0.8em;
+    margin:0;
+    font-size:0.9em;
+    color:#555555;
+}
+
+#experience{
+    padding: 2em 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #CCCCCC;
+}
+
+th{
+    background-color: #F5F5F5;
+    text-align: left;
+    padding: 0.8em;
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+}
+
+td{
+    padding: 0.8em;
+    border: 1px solid #CCCCCC;
+}
+
+tr:nth-of-type(odd){
+    background-color: #FAFAFA;
+}
+
+footer{
+    background-color: #002171;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2em;
+}
+
+#footer-content .logo-text{
+    font-size: 1.3em;
+}
+
+footer p{
+    margin: 1em 0 0.5em;
+    font-weight: bold;
+}
+
+@media (min-width: 600px){
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav li{
+        border-bottom: none;
+        border-right: 1px solid #5C7FA3;
+        padding: 0 1em;
+    }
+    nav li:last-child{
+        border-right: none;
+    }
+    main{
+        padding: 2em 3em;
+    }
+    #about-content{
+        overflow: auto;
+    }
+    .about-col{
+        float: left;
+        width: 50%;
+        padding-right: 1em;
+    }
+    #project-cards{
+        overflow: auto;
+    }
+    .card{
+        float: left;
+        width: 31%;
+        margin-right: 2%;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px){
+    #wrapper{
+        margin: 0 auto;
+        width: 80%;
+        border: 1px solid #002171;
+        box-shadow: 3px 3px 3px #002171;
+    }
+    header{
+        text-align: left;
+        padding: 0.8em 2em;
+        overflow: auto;
+    }
+    #logo{
+        float: left;
+        margin-bottom: 0;
+        padding-top: 0.3em;
+    }
+    nav{
+        float: left;
+        margin-left: 2em;
+        padding-top: 0.3em;
+    }
+    #social-header{
+        float: right;
+        margin-top: 0.3em;
+    }
+    #intro{
+        overflow: auto;
+    }
+
+    #intro-text{
+        float: left;
+        width: 70%;
+        padding-right: 2em;
+    }
+    #photo{
+        float: right;
+        width: 25%;
+        text-align: center;
+        margin-top: 0;
+    }
+}
