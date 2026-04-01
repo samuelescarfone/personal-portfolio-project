@@ -4,21 +4,21 @@
 
 body{
     background-color: #EAEAEA;
-    color: #333333;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper{
     background-color: #FFFFFF;
 }
-
+/* Header */
 header{
-    background-color: #002171;
-    color: #FFFFFF;
     text-align: center;
     padding: 1em;
+    background-color: #002171;
+    color: #FFFFFF;
 }
 
 #logo{
@@ -27,14 +27,14 @@ header{
 
 .logo-text{
     font-weight: bold;
-    font-size: 1.3em;
     color: #FFFFFF;
+    font-size: 1.3em;
 }
 
 nav ul{
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 nav li{
@@ -52,6 +52,9 @@ nav a{
     font-size: 0.95em;
 }
 
+nav a:hover{
+    color: #90C7E3;
+}
 nav a:link{
     color: #FFFFFF;
 }
@@ -60,33 +63,25 @@ nav a:visited{
     color: #CCCCCC;
 }
 
-nav a:hover{
-    color: #90C7E3;
-}
 
-#social-header{
+#social-top{
     margin-top: 0.5em;
 }
 
-.social-icon{
+.social-media{
     display: inline-block;
     width: 32px;
     height: 32px;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
     line-height: 32px;
     font-size: 0.75em;
     margin: 0 0.2em;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.social-icon:hover{
-    background-color: #5C7FA3;
-}
-
-.social-icon img{
+.social-media img{
     width: 100%;
     height: 100%;
 }
@@ -95,15 +90,16 @@ main{
     padding: 1.5em;
 }
 
+/* Intro */
 #home{
     padding-bottom: 2em;
     border-bottom: 1px solid #CCCCCC;
 }
 
-.greeting{
-    font-size: 1.1em;
+.introduction{
     font-weight: bold;
     border: 1px solid #333333;
+    font-size: 1.1em;
     display: inline-block;
     padding: 0.5em 1em;
     margin-bottom: 1em;
@@ -125,11 +121,11 @@ main{
 }
 
 .btn{
+    text-decoration: none;
+    color: #333333;
     display: inline-block;
     padding: 0.5em 1.2em;
     border: 1px solid #333333;
-    text-decoration: none;
-    color: #333333;
     margin-right: 0.5em;
     font-size: 0.95em;
 }
@@ -140,15 +136,16 @@ main{
     border-color: #002171;
 }
 
-#about{
+/* About me section */
+#about-me{
     padding: 2em 0;
     border-bottom: 1px solid #CCCCCC;
 }
 
 h2{
-    color: #222222;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    color: #222222;
+    font-size:1.5em;
     margin-bottom: 1em;
 }
 
@@ -162,7 +159,7 @@ h2{
     margin-bottom: 1.5em;
 }
 
-.card-image{
+.project-image{
     height: 180px;
     background-image: linear-gradient(135deg, #c9e4fe, #90C7E3, #1f459d);
     background-size:100% 100%;
@@ -170,19 +167,20 @@ h2{
 
 .card h3{
     padding: 0.5em 0.8em 0;
+    color: #002171;
     margin: 0;
     font-size: 1em;
-    color: #002171;
 }
 
 .card p{
     padding:0.3em 0.8em 0.8em;
+    color:#555555;
     margin:0;
     font-size:0.9em;
-    color:#555555;
 }
 
-#experience{
+/* My experience section */
+#work-experience{
     padding: 2em 0;
 }
 
@@ -192,31 +190,32 @@ table{
     border: 1px solid #CCCCCC;
 }
 
-th{
-    background-color: #F5F5F5;
-    text-align: left;
-    padding: 0.8em;
-    border: 1px solid #CCCCCC;
-    font-weight: bold;
-}
-
 td{
     padding: 0.8em;
     border: 1px solid #CCCCCC;
+}
+
+th{
+    background-color: #F5F5F5;
+    text-align: left;
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    padding: 0.8em;
 }
 
 tr:nth-of-type(odd){
     background-color: #FAFAFA;
 }
 
+/* footer section*/
 footer{
+    padding: 2em;
+    text-align: center;
     background-color: #002171;
     color: #FFFFFF;
-    text-align: center;
-    padding: 2em;
 }
 
-#footer-content .logo-text{
+#footer .logo-text{
     font-size: 1.3em;
 }
 
@@ -225,6 +224,7 @@ footer p{
     font-weight: bold;
 }
 
+/* Screen size adjustment*/
 @media (min-width: 600px){
     nav ul{
         display: flex;
@@ -232,9 +232,9 @@ footer p{
         justify-content: space-around;
     }
     nav li{
-        border-bottom: none;
         border-right: 1px solid #5C7FA3;
         padding: 0 1em;
+        border-bottom: none;
     }
     nav li:last-child{
         border-right: none;
@@ -263,10 +263,10 @@ footer p{
 
 @media (min-width: 1024px){
     #wrapper{
-        margin: 0 auto;
-        width: 80%;
         border: 1px solid #002171;
         box-shadow: 3px 3px 3px #002171;
+        margin: 0 auto;
+        width: 80%;
     }
     header{
         text-align: left;
@@ -283,7 +283,7 @@ footer p{
         margin-left: 2em;
         padding-top: 0.3em;
     }
-    #social-header{
+    #social-top{
         float: right;
         margin-top: 0.3em;
     }
@@ -292,14 +292,14 @@ footer p{
     }
 
     #intro-text{
+        padding-right: 2em;
         float: left;
         width: 70%;
-        padding-right: 2em;
     }
     #photo{
-        float: right;
-        width: 25%;
         text-align: center;
         margin-top: 0;
+        float: right;
+        width: 25%;
     }
 }
